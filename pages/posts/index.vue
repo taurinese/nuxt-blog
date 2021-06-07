@@ -21,6 +21,18 @@ export default {
     ).then((res) => res.json())
     return { posts }
   },
+  head: {
+    title: 'Posts',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'devoir nuxt - blog',
+      },
+    ],
+  },
 }
 </script>
 
